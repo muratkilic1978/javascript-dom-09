@@ -6,12 +6,18 @@
 //    urls[i].innerHTML = "w3schools";
 //}
 
-const listItems = document.querySelectorAll("li");
+//const listItems = document.querySelectorAll("li");
+//
+//for (let i = 0; i < listItems.length; i++){
+//    console.log(listItems[i].getAttribute('class'));      if(listItems[i].classList.contains('url')){
+//        listItems[i].setAttribute('class','blue');
+//     }
+//}
 
+const listItems = document.querySelectorAll("li");
 for (let i = 0; i < listItems.length; i++){
     console.log(listItems[i].getAttribute('class'));      if(listItems[i].classList.contains('url')){
-        listItems[i].setAttribute('class','blue');
-        listItems[i].style.listStyleType = "square";
-        
+        listItems[i].classList.remove('url');
+        listItems[i].classList.add('blue');
      }
 }
